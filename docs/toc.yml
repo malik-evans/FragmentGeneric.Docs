@@ -1,4 +1,4 @@
 - name: Home
-  href: index.md
-- name: About the docs
-  href: README.md
+  href: Home.md
+- name: Bootstrapping
+  href: Bootstrap-Specification.md
