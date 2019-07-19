@@ -1,0 +1,39 @@
+{
+  "build": {
+    "content": [
+      {
+        "files": ["**/*.yml", "**/*.md"],
+        "src": "docs/metadata/api",
+        "dest": "docs/api"
+      },
+      {
+        "files": ["**/*.yml", "**/*.md"],
+        "src": "docs",
+        "dest": "."
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "resources/**/*.png",
+          "resources/**/*.jpg",
+          "resources/**/*.gif",
+          "resources/**/*.svg",
+          "resources/**/*.pdf",
+          "resources/**/*.css",
+          "resources/**/*.js"
+        ],
+        "exclude": [
+          "_site/**"
+        ],
+        "src": "docs"
+      }
+    ],
+    "globalMetadata": {
+      "_appTitle": "FragmentGeneric Docs",
+      "_enableSearch": true
+    },
+    "markdownEngineName": "markdig",
+    "dest": "_site"
+  }
+}
